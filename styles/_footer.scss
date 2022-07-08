@@ -1,0 +1,134 @@
+footer {
+    background: $primary-color;
+    padding-top: 89px;
+
+    .footer-main {
+        display: flex;
+        flex-direction: row;
+
+        .about {
+            width: 66%;
+            margin-right: 6rem;
+            margin-bottom: 40px;
+
+            img {
+                margin-bottom: 16px;
+            }
+
+            p {
+                color: $grey;
+            }
+
+            &-lists {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                ul {
+                    margin-top: 68px;
+    
+                    p {
+                        margin-bottom:16px;
+                    }
+                    
+                    li {
+                        list-style: none;
+    
+                        p {
+                            color: $white;
+                            margin-bottom: auto;
+                        }
+                    }
+    
+                }
+            }            
+        }
+
+        .contacts {
+            width: 32%;
+            padding-right: 4rem;
+
+            ul {
+                list-style: none;
+            
+                li {
+                    margin-bottom: 25px;
+
+                    .mini {
+                        color: $grey;
+                    }
+
+                    p {
+                        color: $white;
+                    }
+                }
+
+                & > :last-child .mini{
+                    color: $white;
+                }
+            } 
+
+            &-phone {
+                position: relative;
+
+                &::before {
+                    content: url(../img/footer-phone.png);
+                    position: absolute;
+                    left: -19%;
+                }
+            }
+
+            &-mail {
+                position: relative;
+
+                &::before {
+                    content: url(../img/footer-mail.png);
+                    position: absolute;
+                    left: -19%;
+                }
+            }
+
+            &-address {
+                position: relative;
+
+                &::before {
+                    content: url(../img/contacts-map.png);
+                    position: absolute;
+                    left: -19%;
+                }
+            }
+        }
+
+        .network {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+
+            &-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+                a:hover {
+                    @include increase;
+                    cursor: pointer;
+                }
+            }
+
+            &-button {
+                background: #67A8D2;
+                border-radius: 5px;
+                color: $white;
+                padding: 0.8rem 0.4rem;
+                margin-top: 48px;
+                align-self: flex-end;
+
+                &:hover {
+                    @include increase;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

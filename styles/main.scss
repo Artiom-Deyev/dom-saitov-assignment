@@ -1,0 +1,58 @@
+@import 'config';
+@import 'nav';
+@import 'header';
+@import 'subs';
+@import 'footer';
+@import 'copyright';
+
+@font-face {
+    font-family: 'San Francisco Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local("San Francisco Pro Display"),
+    url(../fonts/SFProDisplay-LightItalic.woff) format("woff"),
+    url(../fonts/SFProDisplay-Regular.woff2) format("woff2");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #E5E5E5;
+    font-family: 'San Francisco Pro Display';
+}
+
+.container {
+    margin-right: auto;
+    padding-right: auto;
+
+    max-width: 1185px;
+
+    margin-left: auto;
+    margin-right: auto
+}
+
+.blue {
+    background: $secondary-color;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 2.2rem;
+    
+    
+    p {
+        color: $white;
+    }
+}
+
+@media screen and (max-width: 1208px) {
+    .container {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}

@@ -1,0 +1,17 @@
+.copyright {
+    background: $primary-color;
+
+    &-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid $black-secondary;
+        padding: 30px 0;
+
+        p {
+            color: $black-secondary;
+        }
+    }
+}

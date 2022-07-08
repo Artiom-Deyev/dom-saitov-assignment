@@ -1,0 +1,93 @@
+nav {
+    background: $primary-color;
+    
+    .nav-main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo:hover {
+            @include increase;
+            cursor: pointer;
+         }
+
+        .contacts {
+
+            p {
+                color: $white;
+            }
+
+            &-phone {
+                position: relative;
+                margin-top: 14px;
+                margin-bottom: 17px;
+
+                &::before {
+                    content: url(../img/nav-phone.png);
+                    position: absolute;
+                    left: -26%;
+                    top: -9%;
+                }
+            }       
+
+            &-mail {
+                position:relative;
+                margin-bottom: 32px;
+
+                &::before {
+                    content: url(../img/nav-mail.png);
+                    position: absolute;
+                    left: -26%;
+                    top: -9%;
+                }
+
+                &::after {
+                    content: 'поддержка 24/7';
+                    font-style: italic;
+                    font-weight: 200;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: $white;
+                    position: absolute;
+                    top: 75%;
+                    right: 0;
+                }
+            }  
+        }
+
+        .account {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-button {
+                margin-right: 2rem;
+
+                &:hover {
+                   @include increase;
+                   cursor: pointer;
+                }
+            }
+
+            a {
+                position: relative;
+                background: $secondary-color;
+                padding: 20px;
+                border-radius: 50%;
+
+                &:hover {
+                    @include increase;
+                    cursor: pointer;
+                }   
+
+                img {
+                    position: absolute;
+                    top: 17%;
+                    right: 20%;
+                }
+            }
+        }
+    } 
+}

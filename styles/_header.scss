@@ -1,0 +1,122 @@
+header {
+
+    .services {
+        background: $white;
+
+        &-main {
+            display: flex;        
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                display: block;
+                height: 25px;
+                // padding: 0 2%;
+                margin: 0.5rem 0;
+
+                i {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .promo {
+        background: linear-gradient(91.05deg, #5994BA 14.15%, #ADCCE0 99%);
+
+        &-main {
+            background-image: url(../img/promo-picture.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            padding-top: 3.25rem;
+            padding-bottom: 4rem;
+
+
+            p, h1, h3 {
+                color: $white;
+            }
+
+            h1 {
+                text-shadow: 3px 1px 0px #3E708F;
+                
+            }
+
+            & > :nth-child(3) {
+                padding-top: 1rem;
+            }
+
+            .price {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                padding-top: 2rem;
+
+                &-title {
+
+                    position: relative;
+
+                    &-cont {
+                        background: $orange;
+                        position: absolute;
+                        top: 10px;
+                        width: 350px;
+                        height: 46px;
+                    }
+
+                    h3 {
+                        position: relative;
+                        display: block;
+                        z-index: 2;
+                        background: #1B567C;
+                        text-align: center;
+                        padding-right: 1rem;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                    }
+
+                    img {
+                        z-index: 2;
+                        position: absolute;
+                        top: 67%;
+                        right: -27%;
+                    }
+                }
+                
+                
+                &-layer-top {
+                    position: absolute;
+                    background: #1B567C;
+                    height: 46px;
+                    width: 25%;
+                    left: 0;
+                    z-index: 1;
+                    margin-right: 100rem;
+                }
+
+                &-layer-bottom {
+                    position: absolute;
+                    background: $orange;
+                    height: 46px;
+                    width: 25%;
+                    left: 0;
+                    margin-top: 21px;
+                }
+
+                button {
+                    background: $orange;
+                    color: $white;
+                    padding-top: 0.6rem;
+                    padding-bottom: 0.6rem;
+                    margin-left: 3.6rem;
+                    box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.27);
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

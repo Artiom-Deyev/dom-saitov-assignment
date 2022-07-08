@@ -1,0 +1,161 @@
+.subs {
+    background: #E5E5E5;
+
+    &-main {
+        padding-top: 94px;
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            // display: block;           
+            color: #3C3B3B;
+            padding: 1rem 0;
+        }
+
+        & > :nth-child(2) {
+            display: block;
+            margin-top: 2.5rem;
+        }
+
+        & > :nth-child(2), & > :nth-child(3) {
+            width: 50%;
+        }
+        &-advert {
+            text-align: center;
+        }
+    }
+
+    &-selection {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        & > :first-child {
+            img {
+                width: 85px;
+            }
+        }
+
+        & > :last-child {
+            margin-right: 0;
+        }
+
+        .card {
+            background: $white;
+            width: 280px;
+            height: 190px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 4px rgba(183, 183, 183, 0.43);
+            border-radius: 10px 10px 0px 0px;
+            margin: 4px;
+
+            &:hover {
+               @include increase;
+               cursor: pointer;
+            }
+
+            img {
+                display: block;
+                margin-bottom: 12px;
+            }
+
+            h3 {
+                color: #1B567C;
+            }
+        }
+    }
+
+    .subs-desc {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        margin-bottom: 35px; 
+
+        & > :last-child {
+            margin-right: 0;
+        }
+
+        .buyblock {
+            //position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            text-align: center;
+            width: 280px;
+            min-height: 448px;
+            min-height: 100%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(183, 183, 183, 0.43);
+            border-radius: 0px 0px 10px 10px;
+            margin: 4px;
+            padding: 1rem 0 1.5rem;
+
+            &:hover {
+                @include increase;
+                cursor: pointer;
+            }
+
+            &-content {
+
+                flex: 1 0 auto;
+
+                & > :first-child {
+                    color: $black-secondary;
+                }
+    
+                p {
+                    color: $grey;
+                    size: 16px;
+                }
+            }
+
+
+            &-footer {
+
+                .buyblock-price {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    background-image: url(../img/buyblock-background.png);
+                    background-position: left;
+                    background-repeat: no-repeat;
+                    padding: 0.8rem 2rem;
+    
+                    & > :first-child {
+                        color: #1B567C;
+                        font-weight: 600;
+                    }
+    
+                    h3 {
+                        font-size: 36px;
+                    }
+                }
+    
+                button {
+                    @include buttonFontSecond;
+                    color: $white;
+                    background: $secondary-color;
+                    border-radius: 5px;
+                    color: $white;
+                    margin-top: 23px;
+                    padding: 0.5rem 2.4rem;
+                    vertical-align: bottom;
+                    
+                }
+
+            }
+            
+
+            
+        }
+    }
+}
